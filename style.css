@@ -5,9 +5,13 @@ body {
 }
 
 .navbar {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.92);
   padding: 15px 6%;
   border-bottom: 2px solid #35bde0;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .navbar-brand {
   color: #087ea4;
@@ -73,65 +77,81 @@ section {
   margin-bottom: 15px;
   font-size: 1.05rem;
 }
-
-.about-information {
-  display: grid;
-  grid-template-columns: 48% 48%;
-  justify-content: space-between;
-  gap: 15px;
-  margin-top: 30px;
+.experience-timeline {
+  position: relative;
 }
 
-.about-information div {
-  background-color: #eefbfe;
-  padding: 15px;
-  border-left: 4px solid #25c3e6;
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 27%;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #25c3e6;
 }
 
-.about-information strong {
-  color: #087ea4;
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  padding: 10px 0 40px 0;
 }
 
-.experience-container {
-  display: grid;
-  grid-template-columns: 48% 48%;
-  justify-content: space-between;
-  gap: 25px;
+.timeline-item:last-child {
+  padding-bottom: 10px;
 }
 
-.experience-item {
-  background-color: #f4fbfd;
-  padding: 25px;
-  border-top: 4px solid #25c3e6;
-  transition: transform 0.3s ease;
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 26.3%;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background-color: #00a9d6;
+  border: 4px solid white;
 }
 
-.experience-item:hover {
-  transform: translateY(-5px);
+.timeline-date {
+  width: 25%;
+  text-align: right;
+  color: #00a9d6;
+  font-size: 1rem;
+  padding-top: 10px;
 }
 
-.experience-item h3 {
+.timeline-content {
+  width: 70%;
+  padding-left: 25px;
+}
+
+.timeline-content h3 {
   color: #075985;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 7px;
 }
 
-.experience-item h4 {
+.timeline-content h4 {
   color: #43869a;
-  margin-bottom: 8px;
-}
-
-.date {
-  color: #00a9d6;
+  font-size: 1.15rem;
   margin-bottom: 15px;
 }
 
-.experience-item ul {
+.timeline-content ul {
   margin-left: 20px;
 }
 
-.experience-item li {
+.timeline-content li {
   margin-bottom: 8px;
+}
+
+.timeline-content {
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(5px);
 }
 
 .qualification-container {
@@ -384,7 +404,69 @@ section {
   border-top: 1px solid #70d9ef;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
+  section {
+    padding: 25px 4%;
+  }
+
+  .card-content {
+    padding: 20px 15px;
+  }
+
+  .card-heading {
+    padding: 15px 18px;
+    font-size: 1.5rem;
+  }
+
+  .about-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-information {
+    grid-template-columns: 100%;
+  }
+
+  .experience-container,
+  .qualification-container,
+  .projects-container {
+    grid-template-columns: 100%;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .technical-skills,
+  .soft-skills {
+    width: 100%;
+  }
+
+  .references-container {
+    grid-template-columns: 100%;
+  }
+
+  .footer-contact-information {
+    flex-direction: column;
+  }
+
+  .footer-contact-information div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  section {
+    padding: 35px 6%;
+  }
+
+  .about-information {
+    grid-template-columns: 100%;
+  }
+
   .experience-container,
   .qualification-container,
   .projects-container {
@@ -403,38 +485,52 @@ section {
   .references-container {
     grid-template-columns: 48% 48%;
   }
+
+  .footer-contact-information div {
+    width: 45%;
+  }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 769px) and (max-width: 1279px) {
   section {
-    padding: 30px 5%;
+    padding: 40px 7%;
   }
 
-  .card-content {
-    padding: 25px 18px;
-  }
-
-  .card-heading {
-    padding: 15px 20px;
-  }
-
-  .about-card h1 {
-    font-size: 2rem;
-  }
-
-  .about-information {
-    grid-template-columns: 100%;
+  .experience-container,
+  .qualification-container,
+  .projects-container {
+    grid-template-columns: 48% 48%;
   }
 
   .references-container {
-    grid-template-columns: 100%;
+    grid-template-columns: 48% 48%;
   }
 
-  .footer-contact-information {
-    flex-direction: column;
+  .technical-skills {
+    width: 62%;
   }
 
-  .footer-contact-information div {
-    width: 100%;
+  .soft-skills {
+    width: 38%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .experience-container,
+  .qualification-container,
+  .projects-container {
+    grid-template-columns: 48% 48%;
+  }
+
+  .references-container {
+    grid-template-columns: 23% 23% 23% 23%;
+  }
+
+  .technical-skills {
+    width: 65%;
+  }
+
+  .soft-skills {
+    width: 35%;
   }
 }
