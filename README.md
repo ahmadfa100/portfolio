@@ -9,6 +9,6 @@
 A dynamic portfolio website showcasing my skills, projects, and professional journey as a Full-Stack Developer and Competitive Programmer from Jordan University of Science and Technology.
 
 ## Live Demo
-➡️ **[https://ahmadfa100.github.io/Ahmad-Portfolio/](https://ahmadfa100.github.io/Ahmad-Portfolio/)** ⬅️
+➡️ **[https://ahmadfa100.github.io/Ahmad-Portfolio/]([https://ahmadfa100.github.io/Ahmad-Portfolio/](https://ahmadfa100.github.io/portfolio/))** ⬅️
 
 
