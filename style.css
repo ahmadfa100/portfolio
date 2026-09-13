@@ -6,7 +6,7 @@ body {
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.92);
-  padding: 15px 6%;
+  padding: 15px 80px;
   border-bottom: 2px solid #35bde0;
   position: sticky;
   top: 0;
@@ -15,7 +15,7 @@ body {
 
 .navbar-brand {
   color: #087ea4;
-  font-size: 1.7rem;
+  font-size: 27px;
 }
 
 .navbar .nav-link {
@@ -29,9 +29,8 @@ body {
 }
 
 section {
-  padding: 45px 8%;
+  padding: 45px 110px;
 }
-
 
 .section_card {
   background-color: white;
@@ -47,19 +46,16 @@ section {
   box-shadow: 0 10px 22px #b9dce4;
 }
 
-
 .card_header {
   background-image: linear-gradient(to right, #087ea4, #25c3e6);
   color: white;
   padding: 18px 30px;
-  font-size: 1.8rem;
+  font-size: 29px;
 }
-
 
 .card_content {
   padding: 35px;
 }
-
 
 #about .section_card {
   border-top: 5px solid #25c3e6;
@@ -67,21 +63,20 @@ section {
 
 #about h1 {
   color: #075985;
-  font-size: 2.7rem;
+  font-size: 43px;
   margin-bottom: 10px;
 }
 
 #about h3 {
   color: #00a9d6;
-  font-size: 1.4rem;
+  font-size: 22px;
   margin-bottom: 25px;
 }
 
 #about p {
   margin-bottom: 15px;
-  font-size: 1.05rem;
+  font-size: 17px;
 }
-
 
 .timeline {
   position: relative;
@@ -90,10 +85,10 @@ section {
 .timeline::before {
   content: "";
   position: absolute;
-  left: 27%;
+  left: 270px;
   top: 0;
   width: 3px;
-  height: 100%;
+  height: 650px;
   background-color: #25c3e6;
 }
 
@@ -111,7 +106,7 @@ section {
 .timeline_item::before {
   content: "";
   position: absolute;
-  left: 26.3%;
+  left: 263px;
   top: 15px;
   width: 18px;
   height: 18px;
@@ -120,27 +115,27 @@ section {
 }
 
 .timeline_date {
-  width: 25%;
+  width: 250px;
   text-align: right;
   color: #00a9d6;
-  font-size: 1rem;
+  font-size: 16px;
   padding-top: 10px;
 }
 
 .timeline_content {
-  width: 70%;
+  width: 700px;
   padding-left: 25px;
 }
 
 .timeline_content h3 {
   color: #075985;
-  font-size: 1.4rem;
+  font-size: 22px;
   margin-bottom: 7px;
 }
 
 .timeline_content h4 {
   color: #43869a;
-  font-size: 1.15rem;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
@@ -160,10 +155,9 @@ section {
   transform: translateX(5px);
 }
 
-
 .qualification_container {
   display: grid;
-  grid-template-columns: 48% 48%;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 25px;
 }
@@ -194,7 +188,6 @@ section {
   margin-bottom: 5px;
 }
 
-
 .skills_container {
   display: flex;
   justify-content: space-between;
@@ -202,17 +195,17 @@ section {
 }
 
 .technical_skills {
-  width: 65%;
+  width: 650px;
 }
 
 .soft_skills {
-  width: 35%;
+  width: 350px;
 }
 
 .technical_skills h3,
 .soft_skills h3 {
   color: #075985;
-  font-size: 1.5rem;
+  font-size: 24px;
   margin-bottom: 25px;
 }
 
@@ -261,10 +254,9 @@ section {
   transform: translateX(5px);
 }
 
-
 .projects_container {
   display: grid;
-  grid-template-columns: 48% 48%;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 25px;
 }
@@ -318,17 +310,18 @@ section {
 }
 
 .references_container {
-  display: grid;
-  grid-template-columns: 23% 23% 23% 23%;
-  justify-content: space-between;
-  gap: 20px;
+  display: flex;
+  gap: 100px;
 }
 
 .reference_item {
+  width: 400px;
+
   background-color: #f4fbfd;
   text-align: center;
   padding: 25px 15px;
   border-top: 4px solid #25c3e6;
+
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -359,9 +352,8 @@ section {
 
 .reference_item a {
   color: #00a9d6;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
-
 .footer_section {
   background-color: #075985;
   margin-top: 45px;
@@ -374,17 +366,17 @@ section {
 }
 
 .footer_section .card-header {
-  padding: 20px 8%;
-  font-size: 1.5rem;
+  padding: 20px 110px;
+  font-size: 24px;
   border-bottom: 1px solid #70d9ef;
 }
 
 .footer_section .card-body {
-  padding: 30px 8%;
+  padding: 30px 110px;
 }
 
 .footer_section .card-title {
-  font-size: 1.8rem;
+  font-size: 29px;
   margin-bottom: 25px;
 }
 
@@ -396,7 +388,7 @@ section {
 }
 
 .footer_contact_information div {
-  width: 45%;
+  width: 450px;
 }
 
 .footer_contact_information strong {
@@ -413,10 +405,9 @@ section {
   border-top: 1px solid #70d9ef;
 }
 
-
 @media (max-width: 480px) {
   section {
-    padding: 25px 4%;
+    padding: 25px 20px;
   }
 
   .card_content {
@@ -425,20 +416,20 @@ section {
 
   .card_header {
     padding: 15px 18px;
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   #about h1 {
-    font-size: 1.8rem;
+    font-size: 29px;
   }
 
   #about h3 {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
 
   .qualification_container,
   .projects_container {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
 
   .skills_container {
@@ -447,11 +438,11 @@ section {
 
   .technical_skills,
   .soft_skills {
-    width: 100%;
+    width: 400px;
   }
 
   .references_container {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
 
   .footer_contact_information {
@@ -459,19 +450,18 @@ section {
   }
 
   .footer_contact_information div {
-    width: 100%;
+    width: 400px;
   }
 }
 
-
 @media (min-width: 481px) and (max-width: 768px) {
   section {
-    padding: 35px 6%;
+    padding: 35px 45px;
   }
 
   .qualification_container,
   .projects_container {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
 
   .skills_container {
@@ -480,58 +470,34 @@ section {
 
   .technical_skills,
   .soft_skills {
-    width: 100%;
-  }
-
-  .references_container {
-    grid-template-columns: 48% 48%;
+    width: 650px;
   }
 
   .footer_contact_information div {
-    width: 45%;
+    width: 310px;
   }
 }
-
 
 @media (min-width: 769px) and (max-width: 1279px) {
   section {
-    padding: 40px 7%;
-  }
-
-  .qualification_container,
-  .projects_container {
-    grid-template-columns: 48% 48%;
-  }
-
-  .references_container {
-    grid-template-columns: 48% 48%;
+    padding: 40px 90px;
   }
 
   .technical_skills {
-    width: 62%;
+    width: 620px;
   }
 
   .soft_skills {
-    width: 38%;
+    width: 380px;
   }
 }
 
-
 @media (min-width: 1280px) {
-  .qualification_container,
-  .projects_container {
-    grid-template-columns: 48% 48%;
-  }
-
-  .references_container {
-    grid-template-columns: 23% 23% 23% 23%;
-  }
-
   .technical_skills {
-    width: 65%;
+    width: 650px;
   }
 
   .soft_skills {
-    width: 35%;
+    width: 350px;
   }
 }
