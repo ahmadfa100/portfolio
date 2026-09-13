@@ -124,6 +124,11 @@ section {
 .timeline_content {
   width: 700px;
   padding-left: 25px;
+  transition: transform 0.3s ease;
+}
+
+.timeline_content:hover {
+  transform: translateX(5px);
 }
 
 .timeline_content h3 {
@@ -146,18 +151,9 @@ section {
   margin-bottom: 8px;
 }
 
-.timeline_content {
-  transition: transform 0.3s ease;
-}
-
-.timeline_content:hover {
-  transform: translateX(5px);
-}
-
 .qualification_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
   gap: 25px;
 }
 
@@ -189,15 +185,16 @@ section {
 
 .skills_container {
   display: flex;
-  gap: 530px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .technical_skills {
-  width: 650px;
+  width: 60%;
 }
 
 .soft_skills {
-  width: 350px;
+  width: 30%;
 }
 
 .technical_skills h3,
@@ -255,7 +252,6 @@ section {
 .projects_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
   gap: 25px;
 }
 
@@ -309,17 +305,16 @@ section {
 
 .references_container {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .reference_item {
-  width: 400px;
-
+  width: 23%;
   background-color: #f4fbfd;
   text-align: center;
   padding: 25px 15px;
   border-top: 4px solid #25c3e6;
-
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -352,6 +347,7 @@ section {
   color: #00a9d6;
   font-size: 14px;
 }
+
 .footer_section {
   background-color: #075985;
   margin-top: 45px;
@@ -386,7 +382,7 @@ section {
 }
 
 .footer_contact_information div {
-  width: 320px;
+  width: 45%;
 }
 
 .footer_contact_information strong {
@@ -402,6 +398,7 @@ section {
   padding: 18px;
   border-top: 1px solid #70d9ef;
 }
+
 @media (max-width: 480px) {
   .navbar {
     padding: 10px 15px;
@@ -432,21 +429,26 @@ section {
     font-size: 15px;
   }
 
-  .about_container {
+  .qualification_container,
+  .projects_container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills_container {
     flex-direction: column;
-    gap: 25px;
   }
 
-  .about_text {
+  .technical_skills,
+  .soft_skills {
     width: 100%;
   }
 
-  .about_image {
-    width: 100%;
+  .references_container {
+    flex-direction: column;
   }
 
-  .about_image img {
-    width: 220px;
+  .reference_item {
+    width: 100%;
   }
 
   .timeline::before {
@@ -479,74 +481,14 @@ section {
     padding-left: 0;
   }
 
-  .timeline_content h3 {
-    font-size: 20px;
-  }
-
-  .timeline_content h4 {
-    font-size: 17px;
-  }
-
-  .timeline_content ul {
-    margin-left: 15px;
-    padding-left: 10px;
-  }
-
-  .qualification_container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .qualification_item {
-    padding: 20px;
-  }
-
-  .skills_container {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .technical_skills {
-    width: 100%;
-  }
-
-  .soft_skills {
-    width: 100%;
-  }
-
-  .projects_container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .project_item {
-    padding: 20px;
-  }
-
-  .references_container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .reference_item {
-    width: 100%;
-  }
-
-  .footer_section .card-header {
-    padding: 18px 20px;
-  }
-
+  .footer_section .card-header,
   .footer_section .card-body {
-    padding: 25px 20px;
-  }
-
-  .footer_section .card-title {
-    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer_contact_information {
     flex-direction: column;
-    gap: 15px;
   }
 
   .footer_contact_information div {
@@ -560,40 +502,33 @@ section {
   }
 
   section {
-    padding: 30px 30px;
-  }
-
-  .card_header {
-    font-size: 26px;
+    padding: 30px;
   }
 
   .card_content {
     padding: 25px;
   }
 
-  #about h1 {
-    font-size: 35px;
+  .qualification_container,
+  .projects_container {
+    grid-template-columns: 1fr;
   }
 
-  #about h3 {
-    font-size: 20px;
-  }
-
-  .about_container {
+  .skills_container {
     flex-direction: column;
-    gap: 30px;
   }
 
-  .about_text {
+  .technical_skills,
+  .soft_skills {
     width: 100%;
   }
 
-  .about_image {
-    width: 100%;
+  .references_container {
+    flex-wrap: wrap;
   }
 
-  .about_image img {
-    width: 260px;
+  .reference_item {
+    width: 47%;
   }
 
   .timeline::before {
@@ -624,46 +559,10 @@ section {
     padding-left: 0;
   }
 
-  .qualification_container {
-    grid-template-columns: 1fr;
-  }
-
-  .skills_container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .technical_skills {
-    width: 100%;
-  }
-
-  .soft_skills {
-    width: 100%;
-  }
-
-  .projects_container {
-    grid-template-columns: 1fr;
-  }
-
-  .references_container {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .reference_item {
-    width: 47%;
-  }
-
-  .footer_section .card-header {
-    padding: 20px 30px;
-  }
-
+  .footer_section .card-header,
   .footer_section .card-body {
-    padding: 30px;
-  }
-
-  .footer_contact_information {
-    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .footer_contact_information div {
@@ -680,24 +579,8 @@ section {
     padding: 40px 55px;
   }
 
-  .timeline::before {
-    left: 220px;
-  }
-
-  .timeline_item::before {
-    left: 213px;
-  }
-
-  .timeline_date {
-    width: 200px;
-  }
-
-  .timeline_content {
-    width: 65%;
-  }
-
   .skills_container {
-    gap: 50px;
+    gap: 40px;
   }
 
   .technical_skills {
@@ -705,33 +588,20 @@ section {
   }
 
   .soft_skills {
-    width: 25%;
+    width: 30%;
   }
 
   .references_container {
     flex-wrap: wrap;
-    gap: 25px;
   }
 
   .reference_item {
     width: 47%;
   }
 
-  .footer_section .card-header {
-    padding: 20px 55px;
-  }
-
+  .footer_section .card-header,
   .footer_section .card-body {
-    padding: 30px 55px;
-  }
-
-  .footer_contact_information div {
-    width: 45%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .footer_contact_information div {
-    width: 45%;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
