@@ -85,10 +85,10 @@ section {
 .timeline::before {
   content: "";
   position: absolute;
+  top: 16px;
   left: 270px;
-  top: 0;
   width: 3px;
-  height: 650px;
+  height: 730px;
   background-color: #25c3e6;
 }
 
@@ -111,7 +111,6 @@ section {
   width: 18px;
   height: 18px;
   background-color: #00a9d6;
-  border: 4px solid white;
 }
 
 .timeline_date {
@@ -190,8 +189,7 @@ section {
 
 .skills_container {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  gap: 530px;
 }
 
 .technical_skills {
@@ -388,7 +386,7 @@ section {
 }
 
 .footer_contact_information div {
-  width: 450px;
+  width: 320px;
 }
 
 .footer_contact_information strong {
@@ -404,14 +402,13 @@ section {
   padding: 18px;
   border-top: 1px solid #70d9ef;
 }
-
 @media (max-width: 480px) {
-  section {
-    padding: 25px 20px;
+  .navbar {
+    padding: 10px 15px;
   }
 
-  .card_content {
-    padding: 20px 15px;
+  section {
+    padding: 25px 15px;
   }
 
   .card_header {
@@ -419,85 +416,322 @@ section {
     font-size: 24px;
   }
 
+  .card_content {
+    padding: 20px 15px;
+  }
+
   #about h1 {
     font-size: 29px;
   }
 
   #about h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
 
-  .qualification_container,
-  .projects_container {
+  #about p {
+    font-size: 15px;
+  }
+
+  .about_container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about_text {
+    width: 100%;
+  }
+
+  .about_image {
+    width: 100%;
+  }
+
+  .about_image img {
+    width: 220px;
+  }
+
+  .timeline::before {
+    left: 8px;
+    top: 5px;
+    height: 100%;
+  }
+
+  .timeline_item {
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 0 35px 35px;
+  }
+
+  .timeline_item::before {
+    left: 0;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline_date {
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .timeline_content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .timeline_content h3 {
+    font-size: 20px;
+  }
+
+  .timeline_content h4 {
+    font-size: 17px;
+  }
+
+  .timeline_content ul {
+    margin-left: 15px;
+    padding-left: 10px;
+  }
+
+  .qualification_container {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .qualification_item {
+    padding: 20px;
   }
 
   .skills_container {
     flex-direction: column;
+    gap: 25px;
   }
 
-  .technical_skills,
+  .technical_skills {
+    width: 100%;
+  }
+
   .soft_skills {
-    width: 400px;
+    width: 100%;
+  }
+
+  .projects_container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .project_item {
+    padding: 20px;
   }
 
   .references_container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reference_item {
+    width: 100%;
+  }
+
+  .footer_section .card-header {
+    padding: 18px 20px;
+  }
+
+  .footer_section .card-body {
+    padding: 25px 20px;
+  }
+
+  .footer_section .card-title {
+    font-size: 24px;
   }
 
   .footer_contact_information {
     flex-direction: column;
+    gap: 15px;
   }
 
   .footer_contact_information div {
-    width: 400px;
+    width: 100%;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  section {
-    padding: 35px 45px;
+  .navbar {
+    padding: 12px 25px;
   }
 
-  .qualification_container,
-  .projects_container {
+  section {
+    padding: 30px 30px;
+  }
+
+  .card_header {
+    font-size: 26px;
+  }
+
+  .card_content {
+    padding: 25px;
+  }
+
+  #about h1 {
+    font-size: 35px;
+  }
+
+  #about h3 {
+    font-size: 20px;
+  }
+
+  .about_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about_text {
+    width: 100%;
+  }
+
+  .about_image {
+    width: 100%;
+  }
+
+  .about_image img {
+    width: 260px;
+  }
+
+  .timeline::before {
+    left: 8px;
+    top: 5px;
+    height: 100%;
+  }
+
+  .timeline_item {
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 0 40px 40px;
+  }
+
+  .timeline_item::before {
+    left: 0;
+    top: 5px;
+  }
+
+  .timeline_date {
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .timeline_content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .qualification_container {
     grid-template-columns: 1fr;
   }
 
   .skills_container {
     flex-direction: column;
+    gap: 30px;
   }
 
-  .technical_skills,
+  .technical_skills {
+    width: 100%;
+  }
+
   .soft_skills {
-    width: 650px;
+    width: 100%;
+  }
+
+  .projects_container {
+    grid-template-columns: 1fr;
+  }
+
+  .references_container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .reference_item {
+    width: 47%;
+  }
+
+  .footer_section .card-header {
+    padding: 20px 30px;
+  }
+
+  .footer_section .card-body {
+    padding: 30px;
+  }
+
+  .footer_contact_information {
+    gap: 20px;
   }
 
   .footer_contact_information div {
-    width: 310px;
+    width: 45%;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
+  .navbar {
+    padding: 15px 45px;
+  }
+
   section {
-    padding: 40px 90px;
+    padding: 40px 55px;
+  }
+
+  .timeline::before {
+    left: 220px;
+  }
+
+  .timeline_item::before {
+    left: 213px;
+  }
+
+  .timeline_date {
+    width: 200px;
+  }
+
+  .timeline_content {
+    width: 65%;
+  }
+
+  .skills_container {
+    gap: 50px;
   }
 
   .technical_skills {
-    width: 620px;
+    width: 60%;
   }
 
   .soft_skills {
-    width: 380px;
+    width: 35%;
+  }
+
+  .references_container {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .reference_item {
+    width: 47%;
+  }
+
+  .footer_section .card-header {
+    padding: 20px 55px;
+  }
+
+  .footer_section .card-body {
+    padding: 30px 55px;
+  }
+
+  .footer_contact_information div {
+    width: 45%;
   }
 }
 
 @media (min-width: 1280px) {
-  .technical_skills {
-    width: 650px;
-  }
-
-  .soft_skills {
-    width: 350px;
+  .footer_contact_information div {
+    width: 45%;
   }
 }
