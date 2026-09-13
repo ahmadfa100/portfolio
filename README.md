@@ -4,7 +4,7 @@
 [![GitHub Repository](https://img.shields.io/badge/GITHUB-REPOSITORY-181717?style=for-the-badge&logo=github)](https://github.com/ahmadfa100/portfolio)
 [![GitHub Stars](https://img.shields.io/github/stars/ahmadfa100/portfolio?style=for-the-badge)](https://github.com/ahmadfa100/portfolio/stargazers)
 
-A responsive personal portfolio website built with **HTML5, CSS3, and Bootstrap** to present my background, technical skills, professional experience, qualifications, projects, and references.
+![Ahmad Faisal Bani Hamad](images/Me.jpg)
 
 The project was developed as part of my Full-Stack Web Development training and focuses on applying core frontend concepts through a complete real-world portfolio website.
 
