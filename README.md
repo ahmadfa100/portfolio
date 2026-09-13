@@ -4,7 +4,9 @@
 [![GitHub Repository](https://img.shields.io/badge/GITHUB-REPOSITORY-181717?style=for-the-badge&logo=github)](https://github.com/ahmadfa100/portfolio)
 [![GitHub Stars](https://img.shields.io/github/stars/ahmadfa100/portfolio?style=for-the-badge)](https://github.com/ahmadfa100/portfolio/stargazers)
 
-![Ahmad Faisal Bani Hamad](images/Me.jpg)
+![Ahmad Faisal Bani Hamad](https://ahmadfa100.github.io/Ahmad-Portfolio/images/Me.jpg)
+
+A responsive personal portfolio website showcasing my background, experience, qualifications, technical skills, projects, professional references, and contact information.
 
 The project was developed as part of my Full-Stack Web Development training and focuses on applying core frontend concepts through a complete real-world portfolio website.
 
@@ -54,12 +56,20 @@ The website supports multiple screen sizes using CSS media queries:
 ## Portfolio Sections
 
 ### About
-A short introduction about my software engineering background and development interests.
+
+A short introduction about my software engineering background, full-stack development experience, and technical interests.
 
 ### Experience
-A timeline showing my training and professional experience, including Orange Academy, Cloud, Qualify You, and Clever Mind POB.
+
+A professional timeline covering my training and development experience, including:
+
+- Orange Academy
+- Cloud
+- Qualify You
+- Clever Mind POB
 
 ### Qualification
+
 My academic background and professional certifications, including:
 
 - Bachelor of Software Engineering - Jordan University of Science and Technology
@@ -68,9 +78,20 @@ My academic background and professional certifications, including:
 - Data Science and Artificial Intelligence
 
 ### Skills
-Technical and soft skills covering frontend development, backend development, databases, programming languages, and professional skills.
+
+Technical and soft skills covering:
+
+- Programming Languages
+- Frontend Development
+- Backend Development
+- Databases
+- Problem Solving
+- Teamwork
+- Technical Communication
+- Time Management
 
 ### Projects
+
 Selected software development and AI projects, including:
 
 - AI Daily Developer Journal
@@ -79,10 +100,12 @@ Selected software development and AI projects, including:
 - Bus Ticket System
 
 ### References
+
 Professional references from trainers, colleagues, and software engineers.
 
 ### Contact
-Direct access to my email, GitHub, LinkedIn, and other contact information.
+
+Direct access to my email, GitHub, LinkedIn, and phone number.
 
 ## Project Structure
 
