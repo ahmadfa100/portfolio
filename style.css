@@ -57,6 +57,112 @@ section {
   padding: 35px;
 }
 
+#hero {
+  padding: 0;
+  position: relative;
+  height: 540px;
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid #ccecf3;
+}
+
+#hero_canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero_content {
+  position: relative;
+  z-index: 2;
+
+  width: 700px;
+
+  margin: auto;
+  padding-top: 90px;
+
+  text-align: center;
+}
+
+.hero_small_title {
+  color: #43869a;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.hero_content h1 {
+  color: #075985;
+  font-size: 68px;
+  margin-bottom: 5px;
+}
+
+.hero_content h2 {
+  color: #00a9d6;
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+.hero_description {
+  color: #43869a;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.hero_links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.hero_links a {
+  display: inline-block;
+
+  padding: 12px 25px;
+
+  color: white;
+  background-color: #00a9d6;
+
+  border: 2px solid #00a9d6;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero_links a:last-child {
+  color: #087ea4;
+  background-color: white;
+}
+
+.hero_links a:hover {
+  background-color: #075985;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.hero_social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.hero_social a {
+  color: #43869a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hero_social a:hover {
+  color: #00a9d6;
+}
+
 #about .section_card {
   border-top: 5px solid #25c3e6;
 }
@@ -408,6 +514,52 @@ section {
     padding: 25px 15px;
   }
 
+  #hero {
+    height: 500px;
+  }
+
+  .hero_content {
+    width: 90%;
+    padding-top: 55px;
+  }
+
+  .hero_small_title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+  }
+
+  .hero_content h1 {
+    font-size: 38px;
+  }
+
+  .hero_content h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .hero_description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+  .hero_links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hero_links a {
+    width: 180px;
+  }
+
+  .hero_social {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
   .card_header {
     padding: 15px 18px;
     font-size: 24px;
@@ -505,6 +657,42 @@ section {
     padding: 30px;
   }
 
+  #hero {
+    height: 510px;
+  }
+
+  .hero_content {
+    width: 85%;
+    padding-top: 65px;
+  }
+
+  .hero_small_title {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .hero_content h1 {
+    font-size: 48px;
+  }
+
+  .hero_content h2 {
+    font-size: 22px;
+  }
+
+  .hero_description {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+
+  .hero_links {
+    gap: 12px;
+  }
+
+  .hero_social {
+    gap: 20px;
+  }
+
   .card_content {
     padding: 25px;
   }
@@ -579,6 +767,27 @@ section {
     padding: 40px 55px;
   }
 
+  #hero {
+    height: 520px;
+  }
+
+  .hero_content {
+    width: 75%;
+    max-width: 700px;
+    padding-top: 75px;
+  }
+
+  .hero_content h1 {
+    font-size: 58px;
+  }
+
+  .hero_content h2 {
+    font-size: 25px;
+  }
+
+  .hero_description {
+    font-size: 17px;
+  }
   .skills_container {
     gap: 40px;
   }
