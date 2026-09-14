@@ -62,7 +62,6 @@ section {
   position: relative;
   height: 540px;
   background-color: white;
-  overflow: hidden;
   border-bottom: 1px solid #ccecf3;
 }
 
@@ -76,7 +75,6 @@ section {
 
 .hero_content {
   position: relative;
-  z-index: 2;
 
   width: 700px;
 
@@ -90,19 +88,16 @@ section {
   color: #43869a;
   font-size: 16px;
   letter-spacing: 5px;
-  margin-bottom: 15px;
 }
 
 .hero_content h1 {
   color: #075985;
   font-size: 68px;
-  margin-bottom: 5px;
 }
 
 .hero_content h2 {
   color: #00a9d6;
   font-size: 27px;
-  margin-bottom: 25px;
 }
 
 .hero_description {
@@ -136,7 +131,7 @@ section {
     transform 0.3s ease;
 }
 
-.hero_links a:last-child {
+.hero_links a {
   color: #087ea4;
   background-color: white;
 }
@@ -170,17 +165,14 @@ section {
 #about h1 {
   color: #075985;
   font-size: 43px;
-  margin-bottom: 10px;
 }
 
 #about h3 {
   color: #00a9d6;
   font-size: 22px;
-  margin-bottom: 25px;
 }
 
 #about p {
-  margin-bottom: 15px;
   font-size: 17px;
 }
 
@@ -205,7 +197,7 @@ section {
   padding: 10px 0 40px 0;
 }
 
-.timeline_item:last-child {
+.timeline_item {
   padding-bottom: 10px;
 }
 
@@ -412,7 +404,6 @@ section {
 .references_container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .reference_item {
@@ -514,13 +505,8 @@ section {
     padding: 25px 15px;
   }
 
-  #hero {
-    height: 500px;
-  }
-
   .hero_content {
     width: 90%;
-    padding-top: 55px;
   }
 
   .hero_small_title {
@@ -535,7 +521,6 @@ section {
 
   .hero_content h2 {
     font-size: 20px;
-    margin-bottom: 18px;
   }
 
   .hero_description {
@@ -557,7 +542,6 @@ section {
 
   .hero_social {
     gap: 15px;
-    flex-wrap: wrap;
   }
 
   .card_header {
