@@ -13,11 +13,6 @@ body {
   z-index: 1000;
 }
 
-.navbar-brand {
-  color: #087ea4;
-  font-size: 27px;
-}
-
 .navbar .nav-link {
   color: #16324f;
   margin: 0 7px;
@@ -119,7 +114,7 @@ section {
 
   padding: 12px 25px;
 
-  color: white;
+  color: #087ea4;
   background-color: #00a9d6;
 
   border: 2px solid #00a9d6;
@@ -156,10 +151,6 @@ section {
 
 .hero_social a:hover {
   color: #00a9d6;
-}
-
-#about .section_card {
-  border-top: 5px solid #25c3e6;
 }
 
 #about h1 {
@@ -283,7 +274,6 @@ section {
 
 .skills_container {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
 }
 
@@ -609,12 +599,10 @@ section {
   .timeline_date {
     width: 100%;
     text-align: left;
-    padding-top: 0;
   }
 
   .timeline_content {
     width: 100%;
-    padding-left: 0;
   }
 
   .footer_section .card-header,
@@ -723,12 +711,10 @@ section {
   .timeline_date {
     width: 100%;
     text-align: left;
-    padding-top: 0;
   }
 
   .timeline_content {
     width: 100%;
-    padding-left: 0;
   }
 
   .footer_section .card-header,
