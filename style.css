@@ -366,8 +366,47 @@ section {
   margin-bottom: 12px;
 }
 
-.project_item p:last-child {
+.project_technologies {
   color: #00a9d6;
+}
+
+.project_button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+
+  background-color: #087ea4;
+  color: white;
+
+  border: 2px solid #087ea4;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.project_button:hover {
+  background-color: #075985;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.private_button {
+  background-color: #e6faff;
+  color: #43869a;
+
+  border: 2px solid #b9e8f2;
+
+  cursor: default;
+}
+
+.private_button:hover {
+  background-color: #e6faff;
+  color: #43869a;
+  transform: none;
 }
 
 .github_projects {
