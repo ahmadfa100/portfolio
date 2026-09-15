@@ -412,24 +412,29 @@ section {
 .github_projects {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .github_projects a {
   display: inline-block;
-  background-color: #00a9d6;
+  background-color: #087ea4;
   color: white;
   padding: 12px 25px;
-  border: 2px solid #00a9d6;
+  border: 2px solid #087ea4;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
   transition:
     background-color 0.3s ease,
+    color 0.3s ease,
     transform 0.3s ease;
 }
 
 .github_projects a:hover {
-  background-color: #075985;
+  background-color: white;
+  color: #087ea4;
   transform: translateY(-3px);
 }
-
 .references_container {
   display: flex;
   justify-content: space-between;
